@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>3. Java数组操作问题 - JavaSft</title>
+    <title>4. Java 算法题X - JavaSft</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\font-awesome.min.css">
@@ -86,65 +86,54 @@
         <div class="content-handle"></div>
         <div class="content-container">
           <div class="content-nav content-nav-top">
-            <a class="prev-page" href="base1.html">
+            <a class="prev-page" href="array1.html">
             <i class="fa fa-angle-left"></i>
-            <span class="number">2.</span>
-            Java基础算法题
-            </a>
-            <a class="next-page" href="basex1.html">
-            <span class="number">4.</span>
-            Java 算法题X
-            <i class="fa fa-angle-right"></i>
+            <span class="number">3.</span>
+            Java数组操作问题
             </a>
           </div>
           <div class="page-toc">
             <ul>
               <li class="numbered visible">
-                <a href="#java"><span class="number">3.</span>Java数组操作问题</a>
+                <a href="#java-x"><span class="number">4.</span>Java 算法题X</a>
                 <ul>
-                  <li class="numbered visible"><a href="#id-eb5af07411c03a4a69f5412b67892b7f6e4e3586"><span class="number">3.1.</span>元素中的最大值</a></li>
-                  <li class="numbered visible"><a href="#id-d18edd17696ca4e56788819f0decc10402f66e9b"><span class="number">3.2.</span>指定元素的位置</a></li>
-                  <li class="numbered visible"><a href="#id-c6ae7b62bbf6eeb915b2ad73e2017726f85e5200"><span class="number">3.3.</span>是否包含指定元素</a></li>
-                  <li class="numbered visible"><a href="#id-3f00f76a6ebf5de2b1da8552a4cf036f4ce99721"><span class="number">3.4.</span>删除指定下标元素</a></li>
-                  <li class="numbered visible"><a href="#id-160d4ef9cd51da37ede60d5698d80c65f17a0a35"><span class="number">3.5.</span>插入元素到指定位置</a></li>
-                  <li class="numbered visible"><a href="#id-156bb7a1ee9bf5ffd20c64f6618a78759cd6ef48"><span class="number">3.6.</span>清空数组中所有的某个元素</a></li>
-                  <li class="numbered visible"><a href="#id-e2996c61198dd6ae21d919d4bacb13f59400fe1e"><span class="number">3.7.</span>数组去重</a></li>
-                  <li class="numbered visible">
-                    <a href="#id-5300906ca155a48e33c080a5f2c5e686651d9f7d"><span class="number">3.8.</span>数组排序</a>
-                    <ul>
-                      <li class="numbered visible"><a href="#id-4491a32a66736cfc7c099b097e31a35adeb6dcd5"><span class="number">3.8.1.</span>选择排序</a></li>
-                      <li class="numbered visible"><a href="#id-f334bc070ecf48fe9de4e831faccfa9b6da5ca47"><span class="number">3.8.2.</span>冒泡排序</a></li>
-                      <li class="numbered visible"><a href="#id-1b93a4c1ca0e2772f2645403b12e529ea6eb86b2"><span class="number">3.8.3.</span>直接插入排序</a></li>
-                    </ul>
-                  </li>
+                  <li class="numbered visible"><a href="#id-52d6ea57ea25c0b06da475c2355b53698fb4c186"><span class="number">4.1.</span>随机数统计</a></li>
+                  <li class="numbered visible"><a href="#id-60e410aec47289308f7e72ed855aa772cfba6646"><span class="number">4.2.</span>公串</a></li>
+                  <li class="numbered visible"><a href="#id-9c665c2af71a913bf9afcdd1eb52df4f86db916a"><span class="number">4.3.</span>括号匹配</a></li>
+                  <li class="numbered visible"><a href="#rmb"><span class="number">4.4.</span>RMB大小写转换</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="main-content">
-            <h1 id="java"><span class="number">3.</span>Java数组操作问题</h1>
-            <h2 id="id-eb5af07411c03a4a69f5412b67892b7f6e4e3586"><span class="number">3.1.</span>元素中的最大值</h2>
-            <h2 id="id-d18edd17696ca4e56788819f0decc10402f66e9b"><span class="number">3.2.</span>指定元素的位置</h2>
-            <h2 id="id-c6ae7b62bbf6eeb915b2ad73e2017726f85e5200"><span class="number">3.3.</span>是否包含指定元素</h2>
-            <h2 id="id-3f00f76a6ebf5de2b1da8552a4cf036f4ce99721"><span class="number">3.4.</span>删除指定下标元素</h2>
-            <h2 id="id-160d4ef9cd51da37ede60d5698d80c65f17a0a35"><span class="number">3.5.</span>插入元素到指定位置</h2>
-            <h2 id="id-156bb7a1ee9bf5ffd20c64f6618a78759cd6ef48"><span class="number">3.6.</span>清空数组中所有的某个元素</h2>
-            <h2 id="id-e2996c61198dd6ae21d919d4bacb13f59400fe1e"><span class="number">3.7.</span>数组去重</h2>
-            <h2 id="id-5300906ca155a48e33c080a5f2c5e686651d9f7d"><span class="number">3.8.</span>数组排序</h2>
-            <h3 id="id-4491a32a66736cfc7c099b097e31a35adeb6dcd5"><span class="number">3.8.1.</span>选择排序</h3>
-            <h3 id="id-f334bc070ecf48fe9de4e831faccfa9b6da5ca47"><span class="number">3.8.2.</span>冒泡排序</h3>
-            <h3 id="id-1b93a4c1ca0e2772f2645403b12e529ea6eb86b2"><span class="number">3.8.3.</span>直接插入排序</h3>
+            <h1 id="java-x"><span class="number">4.</span>Java 算法题X</h1>
+            <h2 id="id-52d6ea57ea25c0b06da475c2355b53698fb4c186"><span class="number">4.1.</span>随机数统计</h2>
+            <p>统计随机数出现的次数，并按照出现的次数排列（降序）（只可以使用数组） 如果次数相同按照数字大小排列（升序）</p>
+            <blockquote>
+              <p>RandomArrayDemo.java</p>
+            </blockquote>
+            <h2 id="id-60e410aec47289308f7e72ed855aa772cfba6646"><span class="number">4.2.</span>公串</h2>
+            <p>编写一个函数，返回两个字符串的最大公串！</p>
+            <p>例如，“adbccadebbca”和“edabccadece”,返回bccade</p>
+            <blockquote>
+              <p>PublicStringDemo.java</p>
+            </blockquote>
+            <h2 id="id-9c665c2af71a913bf9afcdd1eb52df4f86db916a"><span class="number">4.3.</span>括号匹配</h2>
+            <p>在控制台输入一个字符串，完成对括号的匹配</p>
+            <blockquote>
+              <p>MatcherDemo.java</p>
+            </blockquote>
+            <h2 id="rmb"><span class="number">4.4.</span>RMB大小写转换</h2>
+            <p>编写一个程序，将浮点数转换未人民币读法字符串，例如，将1006.333转换为一签零陆元叁角叁分</p>
+            <blockquote>
+              <p>ToggleDemo.java</p>
+            </blockquote>
           </div>
           <div class="content-nav content-nav-bottom">
-            <a class="prev-page" href="base1.html">
+            <a class="prev-page" href="array1.html">
             <i class="fa fa-angle-left"></i>
-            <span class="number">2.</span>
-            Java基础算法题
-            </a>
-            <a class="next-page" href="basex1.html">
-            <span class="number">4.</span>
-            Java 算法题X
-            <i class="fa fa-angle-right"></i>
+            <span class="number">3.</span>
+            Java数组操作问题
             </a>
           </div>
           <div class="footer">
