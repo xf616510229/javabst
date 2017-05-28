@@ -12,7 +12,7 @@ public class ToggleDemo {
 	
 	public static void main(String[] args) {
 		
-		String s = method1(55456.333);
+		String s = method1(10001.01);
 		System.out.println(s);
 	}
 
@@ -45,11 +45,16 @@ public class ToggleDemo {
 				s += getDx(two);				
 			}
 		}
-		s+="元";
-		s += getDx(second / 10 % 10);
-		s += "角";
-		s += getDx(second % 10);
-		s += "分";
+		if (first!=0)
+			s+="元";
+		if (second / 10 !=0){
+			s += getDx(second / 10 % 10);
+			s += "角";
+		}
+		if (second % 10 != 0) {
+			s += getDx(second % 10);
+			s += "分";
+		}		
 		return s;
 	}
 	

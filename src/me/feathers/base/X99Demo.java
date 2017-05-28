@@ -24,7 +24,7 @@ public class X99Demo {
 		}
 	}
 	
-	// 将双层for 简化为单层for
+	// 将双层for 简化为单层for循环
 	private static void method2(){
 		for (int i = 1, j = 1; i <= 9; j++){
 			System.out.print(j + "*" + i + "=" + i*j+"\t");
